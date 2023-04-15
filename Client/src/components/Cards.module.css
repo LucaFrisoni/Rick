@@ -1,0 +1,342 @@
+.bloquecartas {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  gap: 1em;
+  margin: auto;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.cartas {
+  padding: 10px;
+  border-radius: 40px;
+  opacity: 95%;
+  border: solid black;
+  text-align: center;
+}
+.cartas:hover {
+  background-color: black;
+  color: gold;
+  font-style: italic;
+  font-family: fantasy;
+  border: solid white;
+}
+.searchbar {
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 300px;
+  margin-top: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.searchbar::placeholder {
+  color: white;
+}
+
+.bd {
+  color: white;
+  border-radius: 8px;
+  background-color: #f6b93b;
+  height: 40px;
+  width: 100px;
+  margin-top: 5px;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.circuloimagen {
+  border-radius: 50%;
+}
+.posicionboton {
+  position: absolute;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: larger;
+  border: none;
+  bottom: 0;
+
+  margin-left: 30px;
+  margin-bottom: 12px;
+  z-index: 1
+}
+.posicionboton:hover{
+  transform: scale(1.2)
+}
+.divbb {
+  background-color: #747d8c;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 95%;
+  border: #57606f 5px;
+  border-style: outset;
+}
+.navbb {
+  background-image: url(https://images3.alphacoders.com/812/812062.png);
+  border-bottom: #000 solid;
+ 
+}
+.navbb1 {
+  background-color: #000000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navbb1 button {
+  background-color: #38ada9;
+  height: 45px;
+  width: 90px;
+  margin-right: 38px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 1px;
+  vertical-align: bottom;
+  margin-left: 50px;
+}
+.navbb1 button:hover {
+  background-color: #ffffff;
+}
+.titulolink {
+  text-decoration: none;
+}
+
+.circuloimagen1 {
+  border-radius: 50%;
+  height: 60%;
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 12px 24px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.circuloimagen1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.detalle h2 {
+  flex: 1;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+.lineaSeparadora {
+  height: 2px;
+  background-color: #000;
+  border: none;
+  margin: 0;
+}
+.divContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+  width: 100vw;
+}
+
+.detalle {
+  flex: 1;
+  background-color: #00000067;
+  width: 50vw;
+}
+.detalle h1 {
+  flex: 1;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: aliceblue;
+  color: goldenrod;
+  text-shadow: #f6b93b;
+}
+.imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 30px;
+  background-color: #2f3542;
+}
+.corazon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+position: absolute;
+  font-size: x-large;
+  margin-bottom: 10px;
+bottom: 0;
+z-index: 1
+}
+.corazon:hover{
+  transform: scale(1.2);
+}
+.nava {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  background-image: url(https://images3.alphacoders.com/812/812062.png);
+  margin: 0;
+  padding: 10px;
+}
+
+.nava * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nava li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nava a {
+  padding: .5em .8em;
+  color:black;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nava a::before,
+.nava a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nava a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.nava a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.nava a:hover:before,
+.nava a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nava a:hover {
+  color: #3DA35D;
+}
+
+.divselector select{
+  background: gold;
+  color: black;
+  padding: 10px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  outline: none;
+margin-right: 50px;
+  }
+  /* .containerrrr{
+    min-height: 90vh;
+    display: flex;
+   margin-top: 20px;
+   margin: auto;
+   gap: 2em;
+   width: fit-content;
+   height: fit-content;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+.containerrrr .card{
+    position: relative;
+}
+.containerrrr .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.containerrrr .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.containerrrr .card:hover .face.face1{transform: translateY(0);
+background:#ff0057 ;}
+.containerrrr .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+.containerrrr .card:hover .face.face1 .content{
+    opacity: 1
+}
+
+.containerrrr .card .face.face1 .content h3{
+margin: 10px 0 0;
+padding: 0;
+color: #fff;
+text-align: center;
+font-size: 1.5em;
+}
+.containerrrr .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing:border-box ;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px)
+}
+.containerrrr .card:hover .face.face2{   transform: translateY(0)}
+.imgg{
+    height: 100px;
+    width: 100px;
+}
+.aprobar{
+    margin: 0;
+    padding: 0;
+}
+.aprobar1{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.aprobar1:hover{
+    background: #333;
+    color: #fff;
+} */
